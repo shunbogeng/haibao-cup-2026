@@ -14,10 +14,10 @@
 
 ## 更新方式
 
-页面文件位于 `site/index.html`，替换后推送到 `main` 分支，Actions 会自动重新发布（Pages 源即 `site/` 目录）。
+页面文件位于 `docs/index.html`，替换后推送到 `main` 分支即可，Pages 会自动重新构建（发布源为 `main` 分支的 `/docs` 目录，无需 Actions）。
 
 ```bash
-git add site/index.html
+git add docs/index.html
 git commit -m "update page"
 git push
 ```
